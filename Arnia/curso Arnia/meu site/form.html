@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid #8869ce;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: azure;
+   
+}
+.menu {
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+    
+}
+
+.titulo {
+    text-align: center;
+    padding: 2em;
+    letter-spacing: 0.1em;
+}
+
+.planos {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+   
+}
+
+.plano {
+    max-width: 30%;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.plano1 {
+    background: #8869ce;
+}
+form{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+    
+    
+}
+
+
+.logo-plano img {
+    max-width: 30%;
+}
+
+.imagem-plano img {
+    max-width: 100%;
+}
+
+button{
+    background-color: azure;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    border-color: azure;
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .planos {
+        flex-wrap: wrap;
+    }
+
+    .plano {
+        min-width: 100%;
+    }
+
+    .imagem-plano {
+        display: none;
+    }
+}
+</style>
+<body>
+    <header>
+        <h1>ArniaERP</h1>
+        <div class="menu">
+            <div>Home</div>
+            <div><a href="planos.html" class="link">Planos</a></div>
+            <div>Sobre nós</div>
+            <div>Seja um parceiro</div>
+        </div>
+    </header>
+    <h2 class="titulo">Preencha o formulario abaixo para que possamos entrar em contato</h2>
+    <section class="planos">
+        <div class="plano plano1">
+            <div class="conteudo-plano">
+                <div class="logo-plano">
+                    <img src="logo.png">
+                </div>
+                <div class="imagem-plano">
+                    <img src="Cloud.png">
+                </div>
+                
+                <div class="descricao-plano">
+                    <form action="">
+                        <label for="nome">Digite seu nome</label>
+                        <input type="text"></input> 
+                        <label for="number">CPF</label>
+                        <input type="number"></input> 
+                        <label for="email">Digite seu email</label>
+                        <input type="email"></input> 
+                        <label for="number">Telefone</label>
+                        <input type="number"></input> 
+                        <label for="">Qual plano deseja escolher?</label>
+                        <input type="text"></input> 
+                   </form>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="button">Enviar solicitação</button>
+            </div>
+        </div>
+        
+    </section>
+    
+</body>
+</html>
