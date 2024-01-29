@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Sora:wght@300&display=swap');
+        
+* {
+    font-family: 'sora', sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+.background-image {
+    background-image: url('../imagens/Fundo-index.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh; 
+    position: absolute;
+    width: 100%;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    padding-top: 1em;
+    border-bottom: 1px; 
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: #fcfafa;
+}
+
+.menu {
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+    z-index: 1;
+    color: #fcfafa;
+    padding-right: 4em;
+}   
+.saldo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'sora', sans-serif;
+    font-size: 24px;
+    align-items: center;
+    position: relative;
+    top: 3em;
+    
+    z-index: 1;
+}
+.joias{
+    display: flex;
+    justify-content: center;
+
+}  
+.campo-pesquisa{
+    position: absolute;
+    z-index: 1;
+    left: 46%;
+    top: 32em;
+  
+}
+
+
+

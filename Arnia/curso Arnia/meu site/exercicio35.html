@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloex1.css">
+    <script src="ex01.js" defer></script>
+</head>
+<body>
+    
+    <form id="formulario">
+        <h1>Soma de dois números</h1>
+        <div>
+        <section class="field">
+            <label for="numero1">Código</label>
+            <input id="numero1" name="numero1" type="text" required />
+        </section>
+        <section class="field">
+            <label for="Nome">Nome</label>
+            <input id="Nome" name="Nome" type="text" required />
+        </section>
+        <section class="field">
+            <label for="Categoria">Categoria</label>
+            <select id="Categoria" name="Categoria" required >
+              <option value="opcao1">Alimento</option>
+              <option value="opcao2">Limpeza</option>
+              <option value="opcao3">Higiene</option>
+            </select>
+        </section>
+        <section class="field">
+            <label for="Preco">Preço</label>
+            <input id="Preco" name="Preco" type="number"required />
+        </section>
+        <section class="field">
+            <label for="Quantidade">Quantidade</label>
+            <input id="Quantidade" name="Quantidade" type="number" required />
+        </section>
+    </div>
+        <button id="btn" type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Sora:wght@300&display=swap');
+
+
+* { margin: 0;
+    padding: 0; 
+    border: 0;
+}
+
+.background-image {
+    background-image: url('../imagens/Fundo-index.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    
+  }
+  
+  .Logo-linkcom {
+    position: relative;
+    top: 16em;
+    left: 32em;
+    right: 26em 
+  }
+  
+  .foreground-image {
+    width: 100%;
+  }
+  .btn{
+    width: 28em;
+    padding: 1em;
+    border: none;
+    border-radius: 5px; 
+    background-color: rgb(174, 174, 183); 
+    color: white; 
+    cursor: pointer;
+    position: relative;
+    top: 23em;
+    left: 4em;
+}

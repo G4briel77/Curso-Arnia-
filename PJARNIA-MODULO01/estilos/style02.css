@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Sora:wght@300&display=swap');
+        
+        
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Sora', sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .background-image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url("../imagens/Fundo-index.png") center/cover no-repeat;
+            
+        }
+        .Logo-linkcom {
+            position: relative;
+            top: 3em;
+            left: 0px;
+            right: 40em;
+          }
+        
+
+        .formulario {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9f6f6;
+            border-radius:32px, 0px, 0px, 32px;
+            z-index: 1;
+        }
+        h1{
+            font-size: 18px;
+            color: #3E4C76;
+        }
+        h2{
+            font-size: 32px;
+            color: #3E4C76;
+            font-weight: bold;
+            
+        }
+        .form-input{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 15px;
+        }
+        
+        
+        label{
+           font-size: 18px;
+        }
+        input{
+            border:solid 1px ;
+            border-radius: 12px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 2em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-right: 4em;
+        }
+        #btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #502B6B;
+            border-radius: 16px;
+            color: #f4f4f4;
+            padding: 1em;
+            
+        }
+        #btn:hover {
+           background-color: #8f4bd2;
+        }
+        a {
+            text-decoration: none; 
+            color: inherit; 
+            cursor: pointer; 
+        }
+
+        
+
+       
+       
