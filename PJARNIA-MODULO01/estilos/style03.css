@@ -58,8 +58,18 @@ header {
     position: absolute;
     z-index: 1;
     left: 46%;
-    top: 32em;
+    top: 25em;
   
+}
+
+.baner{
+    
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20em;
+    border-radius: 16px 16px;
+    width:auto
 }
 
 
