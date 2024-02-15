@@ -4,7 +4,6 @@
         
         body {
             margin: 0;
-            padding: 0;
             font-family: 'Sora', sans-serif;
             display: flex;
             height: 100vh;
@@ -19,11 +18,8 @@
             
         }
         .Logo-linkcom {
-            position: relative;
-            top: 3em;
-            left: 0px;
-            right: 40em;
-          }
+            display: flex;
+        }
         
 
         .formulario {
