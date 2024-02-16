@@ -22,7 +22,9 @@ const mostrarProdutos = (listaprodutos) => {
       
       <div><img src="${produto.imagem}"</div>
       <div>${produto.descricao}</div>
-      <button class = "btn-produtos">RESGATAR</button>
+      <div class = "btn-produtos"">
+                <button onclick="resgatar('${produto.id}')">Resgatar</button>
+            </div>
     `;
 
     divProdutos.appendChild(produtoContainer);
@@ -30,6 +32,9 @@ const mostrarProdutos = (listaprodutos) => {
   });
   
 }
+const resgatar = (id) =>{
+  window.location = `../html/resgate.html?id=${id}`
+ }
 
 //FUNÇÃO QUE CARREGA OS DADOS NA TELA
 const carregarDados = async () => {

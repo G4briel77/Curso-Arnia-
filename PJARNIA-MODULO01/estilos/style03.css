@@ -42,6 +42,7 @@ a{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 30px;
     font-family: 'sora', sans-serif;
     font-size: 24px;
     align-items: center;
@@ -63,26 +64,28 @@ a{
     border-radius: 16px 16px;
     width:auto
 }
+h1{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
 
   .btn-produtos{
     text-align: center;   
     background-color: rebeccapurple;
-    color: white;
+   
     cursor: pointer;
-    width: 100%;
+    
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
   }
 
 .listaProdutos {
-    width: 20%;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
     display: flex;
     flex-wrap: wrap; /* Alterado para wrap */
+    gap: 10px;
+    justify-content: center;
+    width: auto;
 }
 
 

@@ -5,40 +5,48 @@
               {
                 "id": "1",
                 "imagem": "../imagens/fone.png",
+                "joias":"3",
                 "descricao": "fone de ouvido não sei das quantas."
               
               },
               {
                 "id": "2",
                 "imagem": "../imagens/fone.png",
+                "joias":"5",
                 "descricao": "fone de ouvido não sei das quantas."                
               },
               {
                 "id": "3",
                 "imagem": "../imagens/fone.png",
+                "joias":"8",
                 "descricao": "fone de ouvido não sei das quantas."              },
               {
                 "id": "4",
                 "imagem": "../imagens/fone.png",
+                "joias":"3",
                 "descricao": "fone de ouvido não sei das quantas."              },
               {
                 "id": "5",
                 "imagem": "../imagens/fone.png",
+                "joias":"3",
                 "descricao": "fone de ouvido não sei das quantas."              
               },
               {
                 "id": "6",
                 "imagem": "../imagens/fone.png",
+                "joias":"3",
                 "descricao": "fone de ouvido não sei das quantas."              
               },
               {
                 "id": "7",
                 "imagem": "../imagens/fone.png",
+                "joias":"3",
                 "descricao": "fone de ouvido não sei das quantas."              
               },
               {
                 "id": "8",
                 "imagem": "../imagens/fone.png",
+                "joias":"3",
                 "descricao": "fone de ouvido não sei das quantas."              
               }
             ]

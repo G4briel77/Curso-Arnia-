@@ -1,37 +1,35 @@
-const getProdutos = async () => {
-    const dados = await fetch('http://localhost:3000/produtos')
-    const produtos = await dados.json()
-  
-    return produtos
-  }
-  const mostrarProdutos = (listaprodutos) => {
-    const divProdutos = document.querySelector(".listaProdutos");
-  
-    // Limpar o conteúdo existente
-    divProdutos.innerHTML = "";
-  
-    // Passar por cada elemento da lista de produtos e adicionar à divProdutos
-    listaprodutos.forEach(produto => {
-      const produtoContainer = document.createElement("div");
-      produtoContainer.classList.add("produto-container");
-      
-      produtoContainer.innerHTML = `
-        
-        <div><img src="${produto.imagem}"</div>
-        <div>${produto.descricao}</div>
-        <button class = "btn-produtos">RESGATAR</button>
-      `;
-  
-      divProdutos.appendChild(produtoContainer);
-    });
-  }
-  
-  //FUNÇÃO QUE CARREGA OS DADOS NA TELA
-  const carregarDados = async () => {
-    //chamada à função que busca os dados na API e salva o retorno na variavel listaLivros
-    const listaProdutos = await getProdutos()
-    console.log(listaProdutos)
-  
-    //chamada à função que renderiza os livros na página HTML passando a lista de livros como parâmetro
-    mostrarProdutos(listaProdutos)
-  }
+const getProdutos = async (id) =>{
+  const request = await fetch('http://localhost:3000/produtos')
+  let produtos = await request.json()
+  const produto = produtos.find((p) => p.id === id);
+  return produto
+}
+
+
+const mostrarProdutos = async (produto) =>{
+  const card = document.getElementById('container-produto')   
+  card.innerHTML +=`
+  <div class="imagem-produto">
+  <img src="${produto.imagem}"/>
+</div>
+<div class="descricao-produto">
+  <h1 class="titulo">${produto.nome}</h1>
+  <span class="valor">Por ${produto.preco}<img class"img-diamante" src="../Imagens/diamond.png"></span>
+  <p class="texto">${produto.descricao}</p>
+  <button onclick="resgatar(${produto.id})">Resgatar</button>
+</div>`;
+
+}
+
+const resgatar = (id) =>{
+window.location = `../html/resgate02.html?id=${id}`
+}
+
+const carregarProduto = async () =>{
+  const parametros = new URLSearchParams(window.location.search);
+  const id = parametros.get('id');
+  const produtos = await getProdutos(id)
+  mostrarProdutos(produtos)
+}
+
+carregarProduto()
