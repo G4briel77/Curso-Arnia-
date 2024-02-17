@@ -1,87 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&family=Sora:wght@300&display=swap');
         
-        
-        
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: "Sora", sans-serif;
+        }
         body {
-            margin: 0;
-            font-family: 'Sora', sans-serif;
-            display: flex;
-            height: 100vh;
+          background-image: url(../imagens/fundo.jpeg);
+          background-repeat: no-repeat;
+          background-size: cover;
         }
-
-        .background-image {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: url("../imagens/Fundo-index.png") center/cover no-repeat;
-            
+        .container-login {
+          display: flex;
         }
-        .Logo-linkcom {
-            display: flex;
+        .imgLogin {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50vw;
+          height: 100vh;
         }
-        
-
-        .formulario {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f9f6f6;
-            border-radius:32px, 0px, 0px, 32px;
-            z-index: 1;
-        }
-        h1{
-            font-size: 18px;
-            color: #3E4C76;
-        }
-        h2{
-            font-size: 32px;
-            color: #3E4C76;
-            font-weight: bold;
-            
-        }
-        .form-input{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border-radius: 15px;
+        .imgLogin img {
+          width: 50%;
         }
         
+        .login {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: white;
+          margin: 0 auto;
+          width: 50vw;
+          height: 100vh;
+          border-top-left-radius: 32px;
+          border-bottom-left-radius: 32px;
+        }
         
-        label{
-           font-size: 18px;
+        .login02 {
+          margin: 0 auto;
         }
-        input{
-            border:solid 1px ;
-            border-radius: 12px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            padding-left: 2em;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            padding-right: 4em;
-        }
-        #btn{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #502B6B;
-            border-radius: 16px;
-            color: #f4f4f4;
-            padding: 1em;
-            
-        }
-        #btn:hover {
-           background-color: #8f4bd2;
-        }
-        a {
-            text-decoration: none; 
-            color: inherit; 
-            cursor: pointer; 
-        }
-
         
-
-       
+        .login span {
+          font-size: 18px;
+          color: #3e4c76;
+        }
+        
+        .login h1 {
+          color: #502b6b;
+          font-size: 32px;
+          font-weight: 700;
+          margin-bottom: 0.5em;
+        }
+        
+        label {
+          margin-left: 0.5em;
+          color: darkgrey;
+        }
+        input {
+          border: none;
+          outline: none;
+          padding: 0.5em;
+          font-size: 18px;
+          font-weight: 500;
+          width: 95%;
+        }
+        
+        .input {
+          padding: 0.5em;
+          border: 1px solid  rgba(0, 194, 71, 1); 
+          margin: 0.9em 0;
+          border-radius: 15px;
+          width: 22em;
+        }
+        
+        button {
+          background-color: #502b6b;
+          color: white;
+          width: 100%;
+          padding: 1em;
+          border-radius: 15px;
+          font-size: 20px;
+          font-weight: 700;
+          margin: 1em 0;
+          outline: none;
+          border: none;
+        }
+       a{
+        text-decoration: none;
+        color: white;
+       }
        

@@ -1,5 +1,5 @@
 const getProdutos = async (id) =>{
-  const request = await fetch('http://localhost:3000/produtos')
+  const request = await fetch(`http://localhost:3000/produtos?id=${id}`)
   let produtos = await request.json()
   const produto = produtos.find((p) => p.id === id);
   return produto
@@ -9,14 +9,14 @@ const getProdutos = async (id) =>{
 const mostrarProdutos = async (produto) =>{
   const card = document.getElementById('container-produto')   
   card.innerHTML +=`
-  <div class="imagem-produto">
-  <img src="${produto.imagem}"/>
-</div>
+  <div class="container-produto">
+  <img src="${produto.imagem}" id = "imagem-produto"/>
 <div class="descricao-produto">
-  <h1 class="titulo">${produto.nome}</h1>
-  <span class="valor">Por ${produto.preco}<img class"img-diamante" src="../Imagens/diamond.png"></span>
+  <h1 class="titulo">${produto.titulo}</h1>
+  <div class="valor">Por ${produto.joias}<img class"img-diamante" src="../imagens/diamante.png"></div>
   <p class="texto">${produto.descricao}</p>
-  <button onclick="resgatar(${produto.id})">Resgatar</button>
+  <button onclick="resgatar(${produto.id})" id="btn">Resgatar</button>
+</div>
 </div>`;
 
 }
