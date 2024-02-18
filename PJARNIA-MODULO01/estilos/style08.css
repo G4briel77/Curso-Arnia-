@@ -76,7 +76,7 @@
 .linha-abaixo {
   border-bottom: 1px solid #eeeeee;
 }
-.card-joias {
+.card-dados {
   display: flex;
   flex-direction: column;
   justify-content: space-around;

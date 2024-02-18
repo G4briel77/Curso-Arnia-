@@ -1,10 +1,8 @@
 const meusResgates = () => {
-    window.location = "../html/meus-resgates.html";
+    window.location = "../html/meusresgates.html";
   };
   
-  const minhasJoias = () => {
-    window.location = "../html/minhas-joias.html";
-  };
+  
   
   const sair = () => {
     window.location = "../index.html";

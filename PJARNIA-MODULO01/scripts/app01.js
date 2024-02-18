@@ -22,6 +22,7 @@ const mostrarProdutos = (listaprodutos) => {
       
       <div><img src="${produto.imagem}"</div>
       <div><b>${produto.titulo}</b></div>
+      <div id="joias">${produto.joias} jóias</div>
       <div class = "btn-produtos">
                 <button onclick="resgatar(${produto.id})" id="btn">Resgatar</button>
             </div>

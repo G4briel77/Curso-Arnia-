@@ -3,7 +3,7 @@ const meusDados = () => {
   };
   
   const meusResgates = () => {
-    window.location = "../PJARNIA-MODULO01/html/meus-resgates.html";
+    window.location = "../html/meusresgates.html";
   };
   
   const sair = () => {

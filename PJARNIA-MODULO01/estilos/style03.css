@@ -68,9 +68,10 @@
 }  
 #ciclo{
     background-color:
-    #200434 ;
+    #06000b72 ;
     border: 1px solid #200434 ;
-    border-radius: 15px;
+    border-radius: 30px;
+    padding: 10px;
 }
 .input {
     display: flex;
@@ -110,6 +111,8 @@
 h1{
     padding-left: 2rem;
     padding-bottom: 2rem;
+    font-size: 32px;
+    font-weight: bold;
 }
 
   .btn-produtos{
@@ -124,29 +127,21 @@ h1{
   }
 
 .listaProdutos {
-    
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap; /* Alterado para wrap */
-    gap: 10px;
+    gap: 15px;
     justify-content: space-around;
    
 }
-.produto-container{
-    max-width: 20rem;
-    display: flex;
-    
-}
 
-.pai-container{
-    background-color: white;
-    width: 100%;
-}
 #btn{
     color: white;
     font-weight: bold;
     background-color: rebeccapurple;
     border: none;
     cursor: pointer;
+    width: 250px;
 }
 a{
     text-decoration: none;
@@ -157,7 +152,15 @@ a{
 b{
     padding-left: 0.3rem;
 }
-
+#joias{
+    padding-left: 0.3rem;
+    color: #9E9E9E;
+    font-size: 12px;
+}
  
-  
-  
+.produto-container {
+    display: flex;
+    width: 274px;
+    height: 280px;
+    border-radius: 48px;
+  } 
