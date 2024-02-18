@@ -64,7 +64,7 @@
               {
                 "id": "1",
                 "imagem": "../imagens/fone.png",
-                "titulo":"Fone de ouvido modelo 1345",
+                "titulo":"Fone de ouvido Headphone",
                 "joias":"3",
                 "descricao": "O headset é um modelo de fone de ouvido mais robusto que acompanha, ainda, um microfone (fixo, destacável, móvel ou retrátil). Ele pode ser usado por profissionais que precisam falar ao telefone enquanto digitam, por exemplo, mas é especialmente utilizado pelos gamers.",
                 "horario": "14 de fevereiro"
@@ -75,7 +75,7 @@
                 "titulo":"Monitor gamer 32 polegadas",
                 "joias":"3",
                 "descricao": "O DualShock®4 vem com inovações que proporcionam experiências de jogos mais envolventes, incluindo um sensor de seis eixos de alta sensibilidade, além de um touchpad na parte de cima do controle, que oferece maneiras totalmente novas de jogar e interagir com os jogos." ,
-                "horario": "14 de fevereiro"
+                "horario": "30 de fevereiro"
               }
             ],
             "usuarios": [

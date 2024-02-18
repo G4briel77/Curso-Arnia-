@@ -21,13 +21,11 @@ const meusDados = () => {
   
       resgate.innerHTML += `
        <div class="card">
-            <div class='data'>
-                <span>${data}</span>
-            </div>
+            <div id="data">${data}</div>
             <div class='informacoes'>
                 <img src='${imagem}'>
-                <h3>${nome}</h3>
-                <span>${preco} jóias</span>
+                <h3 id= "titulo-resgate">${nome}</h3>
+                <span id = "joias">${preco} jóias</span>
             </div>
        </div>
        `;
