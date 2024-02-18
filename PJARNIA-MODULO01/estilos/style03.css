@@ -115,7 +115,7 @@ h1{
   .btn-produtos{
     text-align: center;   
     background-color: rebeccapurple;
-   text-decoration: none;
+    font-weight: bold;
     cursor: pointer;
     
     margin-top: 10px;
@@ -141,8 +141,22 @@ h1{
     background-color: white;
     width: 100%;
 }
+#btn{
+    color: white;
+    font-weight: bold;
+    background-color: rebeccapurple;
+    border: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    padding: 0.5rem;
+    color: white;
 
-
+}
+b{
+    padding-left: 0.3rem;
+}
 
  
   

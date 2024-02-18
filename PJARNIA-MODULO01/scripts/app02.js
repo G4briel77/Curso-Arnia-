@@ -13,7 +13,7 @@ const mostrarProdutos = async (produto) =>{
   <img src="${produto.imagem}" id = "imagem-produto"/>
 <div class="descricao-produto">
   <h1 class="titulo">${produto.titulo}</h1>
-  <div class="valor">Por ${produto.joias}<img class"img-diamante" src="../imagens/diamante.png"></div>
+  <div class="valor">Por: ${produto.joias}<img id="imagem-diamante" src="../imagens/diamante02.png"></div>
   <p class="texto">${produto.descricao}</p>
   <button onclick="resgatar(${produto.id})" id="btn">Resgatar</button>
 </div>

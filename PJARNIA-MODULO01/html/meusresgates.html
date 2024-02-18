@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../estilos/style06.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="../scripts/app04.js" defer></script>
+    <link rel="stylesheet" href="../estilos/style08.css" />
+    <script src="../scripts/app05.js" defer></script>
     <title>Meu Perfil</title>
   </head>
   <style>
@@ -65,20 +65,25 @@
         </div>
         <div class="menu">
           <a href="../html/paginainicial.html">Home</a>
-          <a href="">Produtos</a>
+          <a href="#">Produtos</a>
           <a href="../html/meuperfil.html">Meu Perfil</a>
         </div>
       </nav>
     </header>
     <main>
-      <section>
+      <section >
         <div id="container">
           <div class="menu-lateral">
             <div class="btn-menu">
                 <span class="material-symbols-outlined">
                     person
                     </span>
-              <button type="button" class="tab-btn" content-id="meus-dados">
+              <button
+                onclick="meusDados()"
+                type="button"
+                class="tab-btn"
+                content-id="meus-dados"
+              >
                 Meus Dados
               </button>
             </div>
@@ -123,25 +128,13 @@
             </div>
           </div>
           <div class="card-dados">
+            <h2>Meus resgates</h2>
             <div class="content" id="meus-dados">
-              <h2>Meus Dados</h2>
-              <img
-                src="../imagens/gabriel-imagem.jpg"
-                alt="imagem da foto de perfil do usuário"
-              />
-              <form id="formulario">
-                <div class="input">
-                  <label for="nome">Nome</label><br />
-                  <input type="text" name="nome" id="nome" />
-                </div>
-                <div class="input">
-                  <label for="email">E-mail</label><br />
-                  <input type="email" name="email" id="email" />
-                </div>
-              </form>
-         
+              <div class="resgates"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
-   <script src="https://kit.fontawesome.com/c2c51032f1.js" crossorigin="anonymous"></script>
 </html>
