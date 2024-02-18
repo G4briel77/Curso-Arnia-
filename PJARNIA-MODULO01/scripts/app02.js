@@ -1,5 +1,5 @@
 const getProdutos = async (id) =>{
-  const request = await fetch(`http://localhost:3000/produtos?id=${id}`)
+  const request = await fetch(`https://api-projeto-arnia-g5ed.onrender.com/produtos?id=${id}`)
   let produtos = await request.json()
   const produto = produtos.find((p) => p.id === id);
   return produto

@@ -14,7 +14,7 @@ const meusResgates = () => {
   };
   
   const carregarDados = async () => {
-    const dados = await fetch("http://localhost:3000/usuarios");
+    const dados = await fetch("https://api-projeto-arnia-g5ed.onrender.com/usuarios");
     console.log(dados);
     const resposta = await dados.json();
     console.log(resposta);
