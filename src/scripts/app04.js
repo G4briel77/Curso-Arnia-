@@ -5,7 +5,7 @@ const meusResgates = () => {
   
   
   const sair = () => {
-    window.location = "../index.html";
+    window.location = "./index.html";
   };
   
   const mostrarDados = (resposta) => {

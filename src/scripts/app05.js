@@ -7,7 +7,7 @@ const meusDados = () => {
   };
   
   const sair = () => {
-    window.location = "../index.html";
+    window.location = "./index.html";
   };
   
   const mostrarResgates = (dadosApi) => {
