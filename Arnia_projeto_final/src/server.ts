@@ -1,27 +1,30 @@
-const { MongoClient } = require ('mongodb')
-const url = 'mongodb+srv://Gabriel:<Gbzin157>@arniabnb.ly4yyd4.mongodb.net/?retryWrites=true&w=majority&appName=ArniaBnb'
-const client = new MongoClient(url);
-const dbname = 'arniaBnb';
-
+import 'dotenv/config';
 import express from 'express';
 import mongoose from 'mongoose';
-import guestRoutes from './routes/guestRoutes';
+import { Database } from './database/connetion';
 import adminRoutes from './routes/adminRoutes';
+import guestRoutes from './routes/guestRoutes';
 import roomRoutes from './routes/roomRoutes';
-import { startController } from './controllers';
-const app = express();
+import reservationRoutes from './routes/reservationRoutes';
 
+Database.initialize();
+
+const app = express();
 app.use(express.json());
 
-app.get('/guests', startController)
+// Rotas de admin
+app.use('/admin', adminRoutes);
 
-app.post('/guests', (request , response) => {
-      const { name } = request.body 
+// Rotas de guests
+app.use('/guests', guestRoutes);
 
-         console.log("Name:", name);
-         console.log(request.body)
+// Rotas de rooms
+app.use('/rooms', roomRoutes);
 
-         response.send({return: 'ok'});
-})
+// Rotas de reservations
+app.use('/reservations', reservationRoutes);
 
-app.listen(3000, ( ) => console.log("Servidor rodando na porta 3000!"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});

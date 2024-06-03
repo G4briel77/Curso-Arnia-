@@ -1,10 +1,9 @@
-
 import express from 'express';
-import { cancelReservation, createReservation } from '../controllers/reservationController';
-import { verifyToken, isGuest } from '../middlewares/authMiddleware';
+import { createReservation, cancelReservation } from '../controllers/reservationController';
 
 const router = express.Router();
 
-router.post('/reservations', verifyToken, isGuest, createReservation);
-router.delete('/reservations/:reservationId', verifyToken, isGuest, cancelReservation);
+router.post('/', createReservation);
+router.put('/:reservationId/cancel', cancelReservation);
+
 export default router;

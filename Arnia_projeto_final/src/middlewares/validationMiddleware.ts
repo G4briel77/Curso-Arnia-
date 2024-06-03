@@ -3,7 +3,7 @@ import { Request, Response, NextFunction } from 'express';
 
 
 export const validateGuestRegistration: ValidationChain[] = [
-  body('name').notEmpty().withMessage('O nome é obrigatório'),
+  body('fullname').notEmpty().withMessage('O nome é obrigatório'),
   body('email').isEmail().withMessage('O email não é válido'),
   body('password').isLength({ min: 6 }).withMessage('A senha deve ter no mínimo 6 caracteres'),
 ];

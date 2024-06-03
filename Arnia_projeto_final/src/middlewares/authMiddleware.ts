@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 
-const JWT_SECRET = 'seuSegredoJWT'; // Isso deve estar em um arquivo de configuração seguro
+const JWT_SECRET = '7ebdf7e3d7e6d08de91d25dc269408d6'
 
 interface AuthRequest extends Request {
   user?: any;
